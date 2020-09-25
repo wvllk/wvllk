@@ -39,12 +39,12 @@ body {
 }
 
 .flex-outer > li:not(:last-child) {
-  margin-bottom: 0px;
+  margin-bottom: 20px;
 }
 
 .flex-outer li label,
 .flex-outer li p {
-  padding: 8px;
+  padding: 0px;
   font-weight: 300;
   letter-spacing: .09em;
   text-transform: uppercase;
