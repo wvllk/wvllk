@@ -25,6 +25,7 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 16px;
+  margin-left: 0;
 }
 
 .flex-outer li,
@@ -73,7 +74,7 @@ body {
 }
 
 .flex-outer li button {
-  margin-left: auto;
+  margin-left: 0;
   padding: 8px 16px;
   border: none;
   background: #333;
