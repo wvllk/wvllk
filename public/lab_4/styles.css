@@ -44,7 +44,7 @@ body {
 
 .flex-outer li label,
 .flex-outer li p {
-  padding: 0px;
+  padding: 8px;
   font-weight: 300;
   letter-spacing: .09em;
   text-transform: uppercase;
@@ -75,7 +75,7 @@ body {
   margin-left: auto;
   padding: 8px 16px;
   border: none;
-  background: #222;
+  background: #333;
   color: #f1f1f1;
   text-transform: uppercase;
   letter-spacing: .09em;
