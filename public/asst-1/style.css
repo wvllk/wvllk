@@ -204,6 +204,6 @@ html, body {
 }
 
 div{
-    display:block
+    display:flex
 }
 
