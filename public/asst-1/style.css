@@ -1,3 +1,16 @@
+body {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 10vw 30vw 10vw;
+    grid-gap: 1em;
+  }
+  
+  header,
+  footer {
+    grid-column: 1 / span 2;
+  }
+  
+
 /* || General setup */
 
 .wrapper{
@@ -9,6 +22,16 @@
     padding-right: 10px; /* 3 */
     padding-left:  10px; /* 3 */
     overflow: hidden;
+  }
+
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .container * {
+    box-sizing: border-box;
   }
 
 html, body {
