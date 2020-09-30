@@ -156,3 +156,7 @@ html, body {
       border-style: solid;
       background-color:#8BC4AD ;
   }
+
+  .wrapper main {
+      flex: 1 0 auto;
+  }
