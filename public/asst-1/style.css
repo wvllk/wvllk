@@ -99,7 +99,7 @@ html, body {
   
   .main, .header, nav, .article, .aside, footer, section {
     background-color: #785049;
-    padding: 1%;
+    padding: 15px;
   }
   
   h1 {
