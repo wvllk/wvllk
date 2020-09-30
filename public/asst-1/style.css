@@ -41,7 +41,7 @@ html, body {
     width: 70%;
     min-width: 800px;
     margin: 0 auto;
-    background-color: #497864;
+    background-color: #64C49C;
 
     /*display: grid;
     grid-template-columns: 75% 25%;
@@ -54,7 +54,7 @@ html, body {
   
   h1, h2, h3 {
     font-family: 'Cinzel Decorative', cursive;
-    color: #64C49C;
+    color: #497864;
   }
   
   p, input, li {
