@@ -43,10 +43,10 @@ html, body {
     margin: 0 auto;
     background-color: #497864;
 
-    display: grid;
+    /*display: grid;
     grid-template-columns: 75% 25%;
     grid-template-rows: 10vw 30vw 10vw;
-    grid-gap: 1em;
+    grid-gap: 1em; */
 
   }
   
