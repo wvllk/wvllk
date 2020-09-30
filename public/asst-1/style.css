@@ -168,9 +168,3 @@ html, body {
       display: flex;
   }
 
-  .wrapper .container {
-    flex: 0 1 auto;
-    margin-right: 0px;
-    max-width: 200;
-    display: flex;   
-  }
