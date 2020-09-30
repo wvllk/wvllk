@@ -20,11 +20,12 @@
   .container {
     width: 80%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 1 auto;
   }
   
   .container * {
     box-sizing: border-box;
+    display: flex;
   }
 
 html, body {
