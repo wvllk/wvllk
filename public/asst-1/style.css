@@ -198,3 +198,12 @@ html, body {
 .container {
     justify-content: center;
 }
+
+.one p{
+    margin:15p;
+}
+
+div{
+    display:block
+}
+
