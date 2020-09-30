@@ -161,6 +161,7 @@ html, body {
 
   .wrapper main {
       flex: 1 0 auto;
+      display: 0 1 flex;
   }
 
   .wrapper .container > div{
