@@ -165,5 +165,6 @@ html, body {
       flex: 1 0 auto;
       margin-right: 0px;
       max-width: 200;
+      display: flex;
   }
 
