@@ -209,3 +209,6 @@ div{
     display:block
 }
 
+#main div {
+     
+    flex: 0 1 auto;
