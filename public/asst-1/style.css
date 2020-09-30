@@ -1,5 +1,16 @@
 /* || General setup */
 
+.wrapper{
+    margin-right: auto; /* 1 */
+    margin-left:  auto; /* 1 */
+  
+    max-width: 960px; /* 2 */
+  
+    padding-right: 10px; /* 3 */
+    padding-left:  10px; /* 3 */
+    overflow: hidden;
+  }
+
 html, body {
     margin: 0;
     padding: 0;
@@ -76,8 +87,8 @@ html, body {
   
   header img {
     display: block;
-    height: 60px; 
-    width:  60px;
+    height: 150px; 
+    width:  150px;
     padding-top: 20.15px;
   }
   
