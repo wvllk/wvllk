@@ -42,7 +42,8 @@ html, body {
   body {
     width: 70%;
     min-width: 800px;
-    margin: 0 auto;
+    margin: 0 ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #64C49C;
 
     /*display: grid;
@@ -179,4 +180,21 @@ html, body {
     margin: 0;
     margin-bottom: 15px;
 
+}
+
+.resp{
+    margin-bottom: 15px;
+}
+
+.jobtitle{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 2px;
+    letter-spacing: 0.02rem;
+}
+
+.container {
+    justify-content: center;
 }
