@@ -160,3 +160,9 @@ html, body {
   .wrapper main {
       flex: 1 0 auto;
   }
+
+  .wrapper .container > div{
+      flex: 1 0 auto;
+      margin-right: 0px;
+      max-width: 200;
+  }
