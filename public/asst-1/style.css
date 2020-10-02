@@ -191,7 +191,7 @@ div {
   }
   
   .inner p {
-    background: #f54100;
+   
     border-radius: 4px;
     padding: 15px;
     display: flex;
@@ -200,7 +200,7 @@ div {
   }
 
   .bottom {
-    background: #f54100;
+  
     padding: 15px;
     border-color: #cccccc;
   }
