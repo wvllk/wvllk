@@ -56,7 +56,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: center;
   }
   
   .left {
@@ -77,10 +77,10 @@ body {
     padding: 15px;
     display: flex;
     flex-direction: row;
-    flex: 0 1 auto;
+    flex: 1 0 auto;
   }
   
-  .image {
+  .img {
     width: inherit;
     border-style: solid;
     border-color: ivory;
