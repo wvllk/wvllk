@@ -2,12 +2,11 @@
 body {
   padding: 0px;
   margin: 0 auto;
-  background-color: #FF5436;
+  background-color: #ff5436;
   font-family: "Roboto", sans-serif;
 }
 
 /* || typography */
-
 
 h1 {
   font-family: "Sansita Swashed", cursive;
@@ -72,7 +71,7 @@ h2 {
 }
 
 .left p {
-  background: #1CFF9E;
+  background: #1cff9e;
   border-radius: 4px;
   padding: 15px;
   display: flex;
@@ -87,11 +86,10 @@ h2 {
   border-width: 1px;
   border-radius: 4px;
   max-width: 180px;
-  
 }
 
 .bottom {
-  background: #00B366;
+  background: #00b366;
   padding: 15px;
   border-color: #cccccc;
 }
@@ -102,18 +100,18 @@ h2 {
   }
 }
 
-  .left {
-    flex: 0 1 auto;
-    flex-wrap: wrap;
-    margin: 0;
-    margin-bottom: 15px;
-    flex-direction: row;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-  }
+.left {
+  flex: 0 1 auto;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 15px;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
-  .wrapper .container > div{
-    flex: 0 1 auto;
-    margin-right: 15px;
-  }
+.wrapper .container > div {
+  flex: 0 1 auto;
+  margin-right: 15px;
+}
