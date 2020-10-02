@@ -95,10 +95,7 @@ h2 {
   border-color: #cccccc;
 }
 
-@media screen and (max-width: 1000px) {
-  .container {
-    justify-content: center;
-  }
+
 
 
 .left  {
@@ -112,8 +109,9 @@ h2 {
   justify-content: space-evenly;
 }
 
-.wrapper .container > div {
-  flex: 0 1 auto;
-  margin-right: 15px;
-}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    justify-content: center;
+  }
 }
