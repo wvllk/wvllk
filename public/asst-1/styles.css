@@ -58,7 +58,7 @@ h2 {
   justify-content: space-between;
 }
 
-.left {
+.lol {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -108,9 +108,7 @@ h2 {
   margin-right: 15px;
  
 }
-.left {
-  flex: 1 0 auto;
-}
+
 @media screen and (max-width: 1000px) {
   .container {
     justify-content: center;
