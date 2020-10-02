@@ -34,7 +34,7 @@ h2 {
 /* || header layout */
 
 .header {
-  background-color: #751f00;
+  background-color: #b3000f;
   width: 100%;
   margin-bottom: 15px;
   padding: 15px;
@@ -72,7 +72,7 @@ h2 {
 }
 
 .left p {
-  background: #f54100;
+  background: #1CFF9E;
   border-radius: 4px;
   padding: 15px;
   display: flex;
@@ -91,7 +91,7 @@ h2 {
 }
 
 .bottom {
-  background: #f54100;
+  background: #00B366;
   padding: 15px;
   border-color: #cccccc;
 }
@@ -116,8 +116,4 @@ h2 {
   .wrapper .container > div{
     flex: 0 1 auto;
     margin-right: 15px;
-  }
-
-  .wrapper .container p{
-    flex: 1 0 auto;
   }
