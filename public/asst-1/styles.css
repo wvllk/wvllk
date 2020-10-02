@@ -10,8 +10,8 @@ body {
   /* || typography */
   
   h1 {
-    font-family: "Sansita Swashed", cursive;
-    color: #2a2a2a;
+    font-family: "Lalezar";
+    color: #000000;
     font-size: 4rem;
     text-align: center;
     font-weight: 400;
@@ -20,7 +20,7 @@ body {
   
   h2 {
     font-family: "Montserrat", sans-serif;
-    color: #2a2a2a;
+    color: #000000;
     font-size: 2rem;
     text-align: left;
     font-weight: 400;
@@ -60,7 +60,6 @@ body {
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
-    
   }
   
   .left {
@@ -73,8 +72,7 @@ body {
     margin: 0;
     margin-right: 15px;
     max-width: 200px;
-   
-  }
+   }
   
   .left p {
     background: #f54100;
