@@ -103,7 +103,7 @@ h2 {
 }
 
   .left {
-    flex: 1 0 auto;
+    flex: 0 1 auto;
     flex-wrap: wrap;
     margin: 0;
     margin-bottom: 15px;
