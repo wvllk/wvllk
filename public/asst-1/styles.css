@@ -112,3 +112,7 @@ h2 {
     align-items: center;
     justify-content: space-evenly;
   }
+
+  .wrapper .container > div{
+    flex: o 1 auto;
+  }
