@@ -108,7 +108,9 @@ h2 {
   margin-right: 15px;
  
 }
-
+.wrapper .container > div{
+  flex: 1 0 auto;
+}
 @media screen and (max-width: 1000px) {
   .container {
     justify-content: center;
