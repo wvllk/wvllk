@@ -56,14 +56,14 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
   }
   
   .left {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex: 0 1 auto;
+    flex: 1 0 auto;
     align-items: center;
     justify-content: space-evenly;
     margin: 0;
