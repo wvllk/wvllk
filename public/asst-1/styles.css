@@ -4,6 +4,7 @@ body {
     margin: 0 auto;
     background-color: #f7784a;
     font-family: "Roboto", sans-serif;
+   
   }
   
   /* || typography */
@@ -14,6 +15,7 @@ body {
     font-size: 4rem;
     text-align: center;
     font-weight: 400;
+  
   }
   
   h2 {
@@ -47,6 +49,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-style: solid;
+  
   }
   
   .container {
@@ -56,6 +60,7 @@ body {
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
+    
   }
   
   .left {
@@ -68,6 +73,7 @@ body {
     margin: 0;
     margin-right: 15px;
     max-width: 200px;
+   
   }
   
   .left p {
@@ -77,6 +83,10 @@ body {
     display: flex;
     flex-direction: row;
     flex: 0 1 auto;
+    border-style: solid;
+    border-color: ivory;
+    border-width: 1px;
+    border-radius: 4px;
   }
   
   .img {
@@ -86,6 +96,7 @@ body {
     border-width: 1px;
     border-radius: 4px;
     max-width: 180px;
+    float: left
   }
   
   .back {
@@ -110,3 +121,4 @@ body {
       justify-content: space-evenly;
     }
   }
+
