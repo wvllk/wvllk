@@ -96,9 +96,8 @@ h2 {
 }
 
 
-
-
 .left  {
+  margin-right: 15px;
   flex: 0 1 auto;
   flex-wrap: wrap;
   margin: 0;
@@ -108,7 +107,6 @@ h2 {
   align-items: center;
   justify-content: space-evenly;
 }
-
 
 @media screen and (max-width: 1000px) {
   .container {
