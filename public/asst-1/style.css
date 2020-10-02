@@ -1,17 +1,15 @@
-.header,
-.footer {
+.header {
   grid-column: 1 / span 2;
 }
 
-
 .wrapper {
-  margin-right: auto; 
-  margin-left: auto; 
+  margin-right: auto;
+  margin-left: auto;
 
-  max-width: 960px; 
+  max-width: 960px; /* 2 */
 
-  padding-right: 10px; 
-  padding-left: 10px; 
+  padding-right: 10px; /* 3 */
+  padding-left: 10px; /* 3 */
   overflow: hidden;
 }
 
@@ -93,20 +91,15 @@ li {
   align-items: center;
 }
 
-
+body > * {
+  background-color: #c46251;
+  padding: 1%;
+}
 
 .main,
 .header {
+  background-color: #785049;
   padding: 15px;
-  display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-flex: 0 1 auto;
-align-items: center;
-justify-content: space-evenly;
-margin: 0;
-margin-right: 15px;
-max-width: 200px;
 }
 
 h1 {
@@ -185,99 +178,34 @@ header img {
 div {
   display: block;
 }
-
-/* || General setup */
-body {
-    padding: 0px;
-    margin: 0 auto;
-    font-family: "Roboto", sans-serif;
-  }
-  
-  /* || typography */
-  
-  
-  h1 {
-    font-family: "Sansita Swashed", cursive;
-    color: #2a2a2a;
-    font-size: 4rem;
-    text-align: center;
-    font-weight: 400;
-  }
-  
-  h2 {
-    font-family: "Montserrat", sans-serif;
-    color: #2a2a2a;
-    font-size: 2rem;
-    text-align: left;
-    font-weight: 400;
-  }
-  
-  .listrem {
-    font-size: 1rem;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  /* || header layout */
-  
-  .header {
-    background-color: #751f00;
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 15px;
+.inner {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    flex: 0 1 auto;
     align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+    margin-right: 15px;
+    max-width: 200px;
   }
   
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .container {
-    max-width: 960px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-  }
-  
-  
-  
-  .main p {
+  .inner p {
+    background: #f54100;
     border-radius: 4px;
     padding: 15px;
     display: flex;
     flex-direction: row;
     flex: 0 1 auto;
   }
-  
-  .image {
-    width: inherit;
-    border-style: solid;
-    border-color: ivory;
-    border-width: 1px;
-    border-radius: 4px;
-    max-width: 180px;
-    
-  }
-  
+
   .bottom {
     background: #f54100;
     padding: 15px;
     border-color: #cccccc;
   }
   
-  @media screen and (max-width: 1000px) {
-    .container {
-      justify-content: center;
-    }
-  
-    .main {
+    .inner {
       flex: 1 0 auto;
       flex-wrap: wrap;
       margin: 0;
@@ -287,3 +215,9 @@ body {
       align-items: center;
       justify-content: space-evenly;
     }
+
+    .listrem {
+        font-size: 1rem;
+        font-weight: 400;
+        font-style: italic;
+      }
