@@ -1,0 +1,122 @@
+/* || General setup */
+body {
+    padding: 0px;
+    margin: 0 auto;
+    background-color: #f7784a;
+    font-family: "Roboto", sans-serif;
+   
+  }
+  
+  /* || typography */
+  
+  h1 {
+    font-family: "Lalezar";
+    color: #000000;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 400;
+  
+  }
+  
+  h2 {
+    font-family: "Montserrat", sans-serif;
+    color: #000000;
+    font-size: 2rem;
+    text-align: left;
+    font-weight: 400;
+  }
+  
+  .sublist {
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  /* || header layout */
+  
+  .header {
+    background-color: #751f00;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: solid;
+  
+  }
+  
+  .container {
+    max-width: 960px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .left {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0;
+    margin-right: 15px;
+    max-width: 200px;
+   }
+  
+  .left p {
+    background: #f54100;
+    border-radius: 4px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex: 0 1 auto;
+    border-style: solid;
+    border-color: ivory;
+    border-width: 1px;
+    border-radius: 4px;
+  }
+  
+  .img {
+    width: inherit;
+    border-style: solid;
+    border-color: ivory;
+    border-width: 1px;
+    border-radius: 4px;
+    max-width: 180px;
+    float: left
+  }
+  
+  .back {
+    background: #f54100;
+    padding: 15px;
+    border-color: #cccccc;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .container {
+      justify-content: center;
+    }
+  
+    .left {
+      flex: 1 0 auto;
+      flex-wrap: wrap;
+      margin: 0;
+      margin-bottom: 15px;
+      flex-direction: row;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  }
+
