@@ -103,6 +103,11 @@ body {
     background: #f54100;
     padding: 15px;
     border-color: #cccccc;
+    flex: 0 2 auto;
+    border-radius: 4px;
+    color: ivory;
+    border: solid 1px black;
+    margin-bottom: 15px;
   }
   
   @media screen and (max-width: 1000px) {
