@@ -33,7 +33,7 @@
                   <textarea rows="5" cols="33" id="message" name="message"></textarea>
                 </li>
                 <li>
-                  <p>Age</p>
+                  <p>Fruits</p>
                   <ul class="flex-inner">
                     <li>
                       <input type="checkbox" id="kiwi" name = "kiwi">
@@ -49,14 +49,29 @@
                     </li>
                   </ul>
                 </li>
+                <script>
+                    var colors = ["red", "blue", "green"];
+                    var colorIndex = 0;
+                    function changeColor() {
+                        var col = document.getElementById("body");
+                        if( colorIndex >= colors.length ) {
+                            colorIndex = 0;
+                        }
+                        col.style.backgroundColor = colors[colorIndex];
+                        colorIndex++;
+                    }
+                </script>
+                    <body id='body'>
+                    <button onclick="changeColor();">Activate</button>
+                    </body>
                 <li>
                   <button type="submit" name = "submit" id = "submit" >Submit</button>
-                  <button type="Activate" name = "Activate" id = "Activate" >Activate</button>
                 </li>
               </ul>
             </form>
           </div>
           </header>
+
           function testFunction() {
             fetch('/api')
             .then((response) => response.text())
