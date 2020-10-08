@@ -36,26 +36,35 @@
                   <p>Age</p>
                   <ul class="flex-inner">
                     <li>
-                      <input type="checkbox" id="eightteen-to-thirtyfive" name = "eightteen-to-thirtyfive">
-                      <label for="eightteen-to-thirtyfive" >18-35</label>
+                      <input type="checkbox" id="kiwi" name = "kiwi">
+                      <label for="kiwi" >Kiwi</label>
                     </li>
                     <li>
-                      <input type="checkbox" id="thirtyfive-to-fifty" name = "thirtyfive-to-fifty">
-                      <label for="thirtyfive-to-fifty" >35-50</label>
+                      <input type="checkbox" id="dragonfruit" name = "dragonfruit">
+                      <label for="dragonfruit" >dragon fruit</label>
                     </li>
                     <li>
-                      <input type="checkbox" id="fifty-to-sixtyfive" name = "fifty-to-sixtyfive">
-                      <label for="fifty-to-sixtyfive" >50-65</label>
+                      <input type="checkbox" id="pomelo" name = "pomelo">
+                      <label for="pomelo" >pomelo</label>
                     </li>
                   </ul>
                 </li>
                 <li>
+                    <div class="submit">
                   <button type="submit" name = "submit" id = "submit" >Submit</button>
                 </li>
+            </div>
               </ul>
             </form>
           </div>
           </header>
+          function testFunction() {
+            fetch('/api')
+            .then((response) => response.text())
+            .then((response) => {
+                 console.log(response);
+            })
+       }
           </body>
           </html>
           

@@ -88,3 +88,7 @@ body {
   .flex-inner li {
     width: 80px;
   }
+
+  .submit{
+      margin-right: 10px;
+  }
