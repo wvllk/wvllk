@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="styles.css"> <!--Include the lab CSS in the head of your file-->
   </head>
   <body>
-      <header>Lab 5 for Malik Downey</header>
+      
       <div class = "wrapper">
         <h1 class= "headname">Malik Downey Lab 4</h1>
     <div class="container">
@@ -60,40 +60,31 @@
             </form>
           </div>
     
-    <script>
-      function testFunction() {
-        fetch("/api")
-          .then((response) => response.text())
-          .then((response) => {
-            console.log(response);
+          <script>
+            function testFunction() {
+                fetch('/api')
+                .then((response) => response.text())
+                .then((response) => {
+                    console.log(response)
+                        document.querySelector('body').style.background = 'purple';
+                        document.querySelector('.title').innerHTML = "Lab 5 for Malik Downey"; 
+                        
+                        document.querySelector('.headname').innerHTML = "Lab 5 for Malik Downey";  
+                        
+                        document.querySelector('.checkbox-list-label').innerHTML = "Fruits"; 
 
-            const name = document.querySelector('.headname');
-            name.innerHTML = "Lab 5 for Malik Downey";  
-                
-            const title = document.querySelector('.title');
-            title.innerHTML = "Lab 5 for Malik Downey";
+                        const checks = document.querySelectorAll('.flex-inner label');
+                        const fruit = ['kiwi', 'dragonfruit', 'pomelo'];
 
-            const checkbox = document.querySelector('.checkbox-list-label');
-            checkbox.innerHTML = "Fruits"; 
-
-            const alllabels = document.querySelectorAll('.flex-inner label');
-            const fruits = ['kiwi', 'Dragonfruit', 'pomelo'];
-
-            const activate_button = document.querySelector('.body').style.background = "orange";
-            const m = document.querySelector('.flex-outer').style.margin = "0 auto";
-
-                        alllabels.forEach((el, i) => {
-                            el.innerHTML = fruits[i]
+                        checks.forEach((check, i) => {
+                            check.innerHTML = fruit[i]
                         }); 
+                        document.querySelector('.flex-outer').style.margin = '0 auto';
+                        
+                })
+          
 
-                        const bg = document.querySelector('body');
-                        bg.style.background = 'black';
-
-                        const f = document.querySelector('.flex-outer');
-                        f.style.margin = '0 auto';
-
-                    })
-                }
-    </script>
+           }
+        </script>
   </body>
 </html>
