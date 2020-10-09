@@ -8,9 +8,7 @@
   </head>
   <body>
       <div class = "wrapper">
-        <h1 class= "headname"> Malik Downey</h1>
-    </div>
-    <br>
+        <h1 class= "headname">Malik Downey Lab 4</h1>
     <div class="container">
             <form action= "/api" method="post">
               <ul class="flex-outer">
@@ -52,7 +50,7 @@
                   </ul>
                 </li>
                 <li>
-                    <button class = "submit" type="submit" name="Submit_button" id="submit">Submit</button>
+                    <button type="submit" name="Submit_button" id="submit">
                 </li>
                 <li>
                     <button type="button" onclick="testFunction()">Activate</button>
@@ -60,6 +58,7 @@
               </ul>
             </form>
           </div>
+    
     <script>
       function testFunction() {
         fetch("/api")
