@@ -65,14 +65,10 @@
           .then((response) => response.text())
           .then((response) => {
             console.log(response);
-            const m = document.querySelector(".namehead");
-            m.innerHTML = "Lab 5 for Malik Downey";
 
-            const s = document.querySelector(".title");
-            s.innerHTML = "Lab 5 for Malik Downey";
-
-            const d = document.querySelector(".checkbox-list-label");
-            d.innerHTML = "Fruits";
+            document.querySelector(‘.title’).innerHTML = “Lab 5 for Malik Downey”;
+            document.querySelector(‘.h1’).innerHTML = “Lab 5 for Malik Downey”;
+            document.querySelector(‘.check-list-label’).innerHTML = “Fruits”;
 
             const alllabels = document.querySelectorAll(".flex-inner label");
             const fruits = ["kiwi", "Dragonfruit", "pomelo"];
