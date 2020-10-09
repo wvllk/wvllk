@@ -33,7 +33,7 @@
                   <textarea rows="5" cols="33" id="message" name="message"></textarea>
                 </li>
                 <li>
-                  <p class = "checkbox-list-label"> Fruits</p>
+                    <p class = "checkbox-list-label"> Fruits</p>
                   <ul class="flex-inner">
                     <li>
                       <input type="checkbox" id="kiwi" name = "kiwi">
@@ -63,23 +63,24 @@
             fetch('/api')
             .then((response) => response.text())
             .then((response) => {
+                console.log(response)
                 document.querySelector('.h1').innerHTML = "Lab 5 for Malik Downey";
 
-                document.querySelector('.title').innerHTML = "Lab 5 for Malik Downey";
+                document.querySelector('.tab').innerHTML = "Lab 5 for Malik Downey";
 
-                document.querySelector('.check-list-label').innerHTML = "Fruits";
+                document.querySelector('.checkbox-list-label').innerHTML = "Fruits";
 
-                const alllabels = document.querySelector('.flex');
-                const fruits = ['kiwi', 'apple', 'fig'];
-                alllabels.forEach((el,i) => {
-                    el.innerHTML = fruits[i]
+                const checks = document.querySelectorAll('.flex-inner label')
+                const fruits = ['Kiwi', 'Dragon Fruit', 'pomelo']
+                alllabels.forEach((check,i) => {
+                    check.innerHTML = fruits[i]
                 });
-              const bg = document.querySelector("body");
-              bg.style.background = 'black';
-              const f = document.querySelector('.flex');
-              f.style.margin = '0 auto';
-       })
-    }
+            })
+            .catch((err) => {
+                console.log(err);
+            })
+       }
        </script>
           </body>
           </html>
+          
