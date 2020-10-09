@@ -50,21 +50,36 @@
                   </ul>
                 </li>
                 <li>
-                    <button type="submit" name = "submit" id = "submit" >Submit</button>
-                    <button type="button" onclick="changeBodyBg('lime');">Activate</button>
+                    <button class="button"  id = "submit_button" name = "Submit_button" type = "submit"> Submit Form</button>
+                   <button onclick="testFunction()" id ="activate_button" class="button" name = "activate_button" type="button">Activate</button>
+                    <!-- <button oclick="button" onclick="changeBodyBg('lime');">Activate</button> !-->
                 </li>
               </ul>
             </form>
           </div>
           </header>
-
+<script>
           function testFunction() {
             fetch('/api')
             .then((response) => response.text())
             .then((response) => {
-                 console.log(response);
-            })
-       }
+                document.querySelector('.Lab').innerHTML = "Lab 5 for Malik Downey";
+
+                document.querySelector('.title').innerHTML = "Lab 5 for Malik Downey";
+
+                document.querySelector('.check').innerHTML = "Fruits";
+
+                const alllabels = document.querySelector('.flex');
+                const fruits = ['kiwi', 'apple', 'fig'];
+                alllabels.forEach((el,i) => {
+                    el.innerHTML = fruits[i]
+                });
+              const bg = document.querySelector("body");
+              bg.style.background = 'black';
+              const f = document.querySelector('.flex');
+              f.style.margin = '0 auto';
+       })
+    }
+       </script>
           </body>
           </html>
-          
