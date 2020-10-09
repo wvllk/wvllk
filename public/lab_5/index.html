@@ -1,75 +1,66 @@
 <!DOCTYPE html>
-<html lang="‘en’">
+<html lang=‘en’>
   <head>
-    <meta charset="utf-8" />
-    <meta name="Malik Downey" content="Lab 4" />
-    <!--Add your name and lab number in a header element to the page.-->
+    <meta charset="utf-8">
+    <meta name="Malik Downey" content="Lab 4"> <!--Add your name and lab number in a header element to the page.-->
     <title>Malik Downey Lab 4</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <!--Include the lab CSS in the head of your file-->
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!--Include the lab CSS in the head of your file-->
   </head>
   <body>
     <header>
-      <h1 class="namehead">Malik Downey Lab 4</h1>
-      <div class="container">
-        <form action="/api" method="post">
-          <ul class="flex-outer">
-            <li>
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" maxlength="140" name="fname" />
-            </li>
-            <li>
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" maxlength="140" name="lname" />
-            </li>
-            <li>
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" />
-            </li>
-            <li>
-              <label for="phone">Phone</label>
-              <input type="tel" id="phone" name="phone" />
-            </li>
-            <li>
-              <label for="message">Text Field</label>
-              <textarea
-                rows="5"
-                cols="33"
-                id="message"
-                name="message"
-              ></textarea>
-            </li>
-            <li>
-              <p class="checkbox-list-label">Fruits</p>
-              <ul class="flex-inner">
+        <h1>Malik Downey Lab 4</h1>
+    <div class="container">
+            <form action= "/api" method="post">
+              <ul class="flex-outer">
                 <li>
-                  <input type="checkbox" id="kiwi" name="kiwi" />
-                  <label for="kiwi">Kiwi</label>
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname"  maxlength = "140" name = "fname">
                 </li>
                 <li>
-                  <input type="checkbox" id="dragonfruit" name="dragonfruit" />
-                  <label for="dragonfruit">dragon fruit</label>
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname"  maxlength = "140"name = "lname">
                 </li>
                 <li>
-                  <input type="checkbox" id="pomelo" name="pomelo" />
-                  <label for="pomelo">pomelo</label>
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name = "email" >
                 </li>
+                <li>
+                  <label for="phone">Phone</label>
+                  <input type="tel" id="phone" name = "phone">
+                </li>
+                <li>
+                  <label for="message">Text Field</label>
+                  <textarea rows="5" cols="33" id="message" name="message"></textarea>
+                </li>
+                <li>
+                  <p class="checkbox-list-label">Age</p>
+                  <ul class="flex-inner">
+                    <li>
+                      <input type="checkbox" id="eightteen-to-thirtyfive" name = "eightteen-to-thirtyfive">
+                      <label for="eightteen-to-thirtyfive" >18-35</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="thirtyfive-to-fifty" name = "thirtyfive-to-fifty">
+                      <label for="thirtyfive-to-fifty" >35-50</label>
+                    </li>
+                    <li>
+                      <input type="checkbox" id="fifty-to-sixtyfive" name = "fifty-to-sixtyfive">
+                      <label for="fifty-to-sixtyfive" >50-65</label>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                    <button type="submit" name="Submit_button" id="submit">
+                </li>
+                <li><button type="button" onclick="testFunction()">Activate</button></li>
               </ul>
-            </li>
-            <li>
-              <button type="submit" name="Submit_button" id="submit">
-                Submit Form
-              </button>
-            </li>
-            <li>
-              <button type="button" onclick="testFunction()">Activate</button>
-              <!-- <button oclick="button" onclick="changeBodyBg('lime');">Activate</button> !-->
-            </li>
-          </ul>
-        </form>
-      </div>
-    </header>
+            </form>
+          </div>
+          </header>
     <script>
+ 
+
+
       function testFunction() {
         fetch("/api")
           .then((response) => response.text())
