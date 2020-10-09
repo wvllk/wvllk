@@ -64,11 +64,27 @@
             .then((response) => response.text())
             .then((response) => {
                 console.log(response)
-                document.querySelector('.h1').innerHTML = "Lab 5 for Malik Downey";
+                        const m = document.querySelector('.lab-name');
+                        m.innerHTML = "Lab 5 for Malik Downey";  
+                
+                        const s = document.querySelector('title');
+                        s.innerHTML = "Lab 5 for Malik Downey"; 
 
-                document.querySelector('.title').innerHTML = "Lab 5 for Malik Downey";
+                        const d = document.querySelector('.checkbox-list-label');
+                        d.innerHTML = "Fruits"; 
 
-                document.querySelector('.checkbox-list-label').innerHTML = "Fruits";
+                        const alllabels = document.querySelectorAll('.flex-inner label');
+                        const fruits = ['kiwi', 'apple', 'fig'];
+
+                        alllabels.forEach((el, i) => {
+                            el.innerHTML = fruits[i]
+                        }); 
+
+                        const bg = document.querySelector('body');
+                        bg.style.background = 'black';
+
+                        const f = document.querySelector('.flex-outer');
+                        f.style.margin = '0 auto';
                 
 
                 const checks = document.querySelectorAll('.flex-inner label')
