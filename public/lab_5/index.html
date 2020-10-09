@@ -33,7 +33,7 @@
                   <textarea rows="5" cols="33" id="message" name="message"></textarea>
                 </li>
                 <li>
-                  <p>Fruits</p>
+                  <p class = "checkbox-list-label"> Fruits</p>
                   <ul class="flex-inner">
                     <li>
                       <input type="checkbox" id="kiwi" name = "kiwi">
@@ -63,11 +63,11 @@
             fetch('/api')
             .then((response) => response.text())
             .then((response) => {
-                document.querySelector('.Lab').innerHTML = "Lab 5 for Malik Downey";
+                document.querySelector('.h1').innerHTML = "Lab 5 for Malik Downey";
 
                 document.querySelector('.title').innerHTML = "Lab 5 for Malik Downey";
 
-                document.querySelector('.check').innerHTML = "Fruits";
+                document.querySelector('.check-list-label').innerHTML = "Fruits";
 
                 const alllabels = document.querySelector('.flex');
                 const fruits = ['kiwi', 'apple', 'fig'];
