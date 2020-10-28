@@ -33,15 +33,15 @@ document.body.addEventListener("submit", async (e) => {
   })
   .then((fromServer) => fromServer.json())
   .then((fromServer) => {
-    if(document.querySelector('.flex-inner'].remove();
-  }
+    if(document.querySelector('.flex-inner'.remove
+  
   const arr1 = range(10);
   const arr2 = arr1.map(()=> {
     const number = getRandomIntInclusive(0,243);
-    return fromServer[number);
+    return fromServer[number];
   });
   const revlist = arr2.sort((a, b) => sortFunction(b, a, 'name'));
-  const olist = document.createElement('ol'];
+  const olist = document.createElement('ol')
   olist.className = 'flex-inner';
 $('form').append(olist);
 
@@ -53,3 +53,4 @@ revlist.forEach((el, i) => {
       });
     })
     .catch((err) => console.log(err));
+    })
