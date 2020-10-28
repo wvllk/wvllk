@@ -31,21 +31,21 @@ document.body.addEventListener("submit", async (e) => {
     },
     body: JSON.stringify(form),
   })
-  .then((fromServer) => fromServer.json())
-  .then((fromServer) => {
-    if(document.querySelector('.flex-inner'.remove
+    .then((fromServer) => fromServer.json())
+    .then((fromServer) => {
+      if (document.querySelector('.flex-inner'.remove
   
-  const arr1 = range(10);
-  const arr2 = arr1.map(()=> {
-    const number = getRandomIntInclusive(0,243);
-    return fromServer[number];
-  });
-  const revlist = arr2.sort((a, b) => sortFunction(b, a, 'name'));
-  const olist = document.createElement('ol')
-  olist.className = 'flex-inner';
-$('form').append(olist);
+      const arr1 = range=(10);
+      const arr2 = arr1.map(() => {
+        const number = getRandomIntInclusive(0, 243);
+        return fromServer[number];
+      });
+      const revlist = arr2.sort((a, b) => sortFunction(b, a, 'name'));
+      const olist = document.createElement('ol')
+      olist.className = 'flex-inner';
+      $('form').append(olist);
 
-revlist.forEach((el, i) => {
+      revlist.forEach((el, i) => {
         const lis = document.createElement('li');
         $(lis).append(`<input type="checkbox" value=${el.code} id=${el.code} />`);
         $(lis).append(`<label for=${el.code}>${el.name} </label>`);
@@ -53,4 +53,4 @@ revlist.forEach((el, i) => {
       });
     })
     .catch((err) => console.log(err));
-    })
+})
