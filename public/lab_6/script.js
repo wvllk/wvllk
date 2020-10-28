@@ -48,7 +48,7 @@ $('form').append(olist);
 revlist.forEach((el, i) => {
         const lis = document.createElement('li');
         $(lis).append(`<input type="checkbox" value=${el.code} id=${el.code} />`);
-        $(element).append(`<label for=${el.code}>${el.name} </label>`);
+        $(lis).append(`<label for=${el.code}>${el.name} </label>`);
         olist.appendChild(lis);
       });
     })
