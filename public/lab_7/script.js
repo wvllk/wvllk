@@ -2,29 +2,34 @@ function convertRestaurantsToCategories(restaurantList) {
   const categoryArray = [];
   const result = {};
   for (let i = 0; i < restaurantList.length; i += 1)
-    categoryArray.push(restaurantList[i].category)
+    categoryArray.push(restaurantList[i].category) 
+}
+//console.log(categoryArray);
   for (let i = 0; i < categoryArray.length; i += 1)
     if (!result[categoryArray[i]]) {
       result[categoryArray[i]] = 0;
     }
   result[categoryArray[i]] += 1;
-}
-const reply = object.keys(result).map((category));
+  }
+
+const reply = Object.keys(result).map((category));
   y: result[category],
   label: category
-;
+}));
+
 console.log('reply', reply);
 return reply;
+}
 
 // process your restaurants here!
-return list;
+//return list;
 
 
 function makeYourOptionsObject(datapointsFromRestaurantsList) {
   // set your chart configuration here!
-  CanvasJS.addColorSet('customColorSet1', [
+  //CanvasJS.addColorSet('customColorSet1', [
     // add an array of colors here https://canvasjs.com/docs/charts/chart-options/colorset/
-  ]);
+  //]);
 
   return {
     animationEnabled: true,
@@ -77,14 +82,14 @@ function runThisWithResultsFromServer(jsonFromServer) {
     '#94FC5D',
     '#F2E75A'
   ]);
-  const dataPoints = convertRestaurantsToCategories //not finshed this line
+  const dataPoints = convertRestaurantsToCategories(jsonFromServer); //not finshed this line
   const options = makeYourOptionsObject(dataPoints);
 
-  const chart = new CanvasJS.Chart ('chartContainer')
+  const chart = new CanvasJS.Chart ('chartContainer', options);
   chart.render();
-  $(window).on('resize, () => {
+  $(window).on('resize', () =>{
     chart.render()
-  )};
+  });
 
   // Make a configuration object for your chart
   // Instantiate your chart
