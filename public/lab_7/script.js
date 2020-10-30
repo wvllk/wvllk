@@ -5,21 +5,21 @@ function convertRestaurantsToCategories(restaurantList) {
     categoryArray.push(restaurantList[i].category) 
 }
 //console.log(categoryArray);
-  for (let i = 0; i < categoryArray.length; i += 1)
+  for (let i = 0; i < categoryArray.length; i += 1) {
     if (!result[categoryArray[i]]) {
       result[categoryArray[i]] = 0;
     }
   result[categoryArray[i]] += 1;
   }
 
-const reply = Object.keys(result).map((category));
+const reply = Object.keys(result).map((category)); {(
   y: result[category],
   label: category
-}));
+});
 
 console.log('reply', reply);
 return reply;
-}
+  ;
 
 // process your restaurants here!
 //return list;
@@ -33,7 +33,7 @@ function makeYourOptionsObject(datapointsFromRestaurantsList) {
 
   return {
     animationEnabled: true,
-    colorSet: 'customColorSet1',
+    colorSet: 'miscAdobe',
     title: {
       text: 'Places To Eat Out In Future'
     },
@@ -46,7 +46,8 @@ function makeYourOptionsObject(datapointsFromRestaurantsList) {
       gridColor: 'rgba(1,77,101,.1)',
       title: 'Restaurants By Category',
       labelFontSize: 12,
-      scaleBreaks: { customBreaks: [{
+      scaleBreaks: { 
+        customBreaks: [{
         startValue: 40,
         endValue:50,
         color:'Orange'
@@ -72,6 +73,7 @@ function makeYourOptionsObject(datapointsFromRestaurantsList) {
 }
 
 function runThisWithResultsFromServer(jsonFromServer) {
+  //this shoudl form the list
   console.log('jsonFromServer', jsonFromServer);
   sessionStorage.setItem('restaurantList', JSON.stringify(jsonFromServer)); // don't mess with this, we need it to provide unit testing support
   canvasJS.addColorSet('miscAdobe',
@@ -82,14 +84,15 @@ function runThisWithResultsFromServer(jsonFromServer) {
     '#94FC5D',
     '#F2E75A'
   ]);
-  const dataPoints = convertRestaurantsToCategories(jsonFromServer); //not finshed this line
+  const dataPoints = convertRestaurantsToCategories(jsonFromServer); 
   const options = makeYourOptionsObject(dataPoints);
 
   const chart = new CanvasJS.Chart ('chartContainer', options);
   chart.render();
   $(window).on('resize', () =>{
-    chart.render()
+    chart.render();
   });
+}
 
   // Make a configuration object for your chart
   // Instantiate your chart
