@@ -1,7 +1,24 @@
 function convertRestaurantsToCategories(restaurantList) {
-  // process your restaurants here!
-  return list;
+  const categoryArray = [];
+  const result = {};
+  for (let i = 0; i < restaurantList.length; i += 1)
+    categoryArray.push(restaurantList[i].category)
+  for (let i = 0; i < categoryArray.length; i += 1)
+    if (!result[categoryArray[i]]) {
+      result[categoryArray[i]] = 0;
+    }
+  result[categoryArray[i]] += 1;
 }
+const reply = object.keys(result).map((category));
+  y: result[category],
+  label: category
+;
+console.log('reply', reply);
+return reply;
+
+// process your restaurants here!
+return list;
+
 
 function makeYourOptionsObject(datapointsFromRestaurantsList) {
   // set your chart configuration here!
@@ -13,7 +30,7 @@ function makeYourOptionsObject(datapointsFromRestaurantsList) {
     animationEnabled: true,
     colorSet: 'customColorSet1',
     title: {
-      text: 'Change This Title'
+      text: 'Places To Eat Out In Future'
     },
     axisX: {
       interval: 1,
@@ -22,9 +39,23 @@ function makeYourOptionsObject(datapointsFromRestaurantsList) {
     axisY2: {
       interlacedColor: 'rgba(1,77,101,.2)',
       gridColor: 'rgba(1,77,101,.1)',
-      title: 'Change This Title',
+      title: 'Restaurants By Category',
       labelFontSize: 12,
-      scaleBreaks: {customBreaks: []} // Add your scale breaks here https://canvasjs.com/docs/charts/chart-options/axisy/scale-breaks/custom-breaks/
+      scaleBreaks: { customBreaks: [{
+        startValue: 40,
+        endValue:50,
+        color:'Orange'
+      },
+      {
+        startValue: 85,
+        endValue: 100,
+        color: 'orange'
+      },
+      {
+        startValue:140,
+        endValue:175,
+        color: 'orange'
+      }] } // Add your scale breaks here https://canvasjs.com/docs/charts/chart-options/axisy/scale-breaks/custom-breaks/
     },
     data: [{
       type: 'bar',
@@ -38,7 +69,23 @@ function makeYourOptionsObject(datapointsFromRestaurantsList) {
 function runThisWithResultsFromServer(jsonFromServer) {
   console.log('jsonFromServer', jsonFromServer);
   sessionStorage.setItem('restaurantList', JSON.stringify(jsonFromServer)); // don't mess with this, we need it to provide unit testing support
-  // Process your restaurants list
+  canvasJS.addColorSet('miscAdobe',
+  [//color set array // Process your restaurants list
+    '#4F61F7',
+    '#5DDDFC',
+    '#60E69F',
+    '#94FC5D',
+    '#F2E75A'
+  ]);
+  const dataPoints = convertRestaurantsToCategories //not finshed this line
+  const options = makeYourOptionsObject(dataPoints);
+
+  const chart = new CanvasJS.Chart ('chartContainer')
+  chart.render();
+  $(window).on('resize, () => {
+    chart.render();
+  });
+}
   // Make a configuration object for your chart
   // Instantiate your chart
   const reorganizedData = convertRestaurantsToCategories(jsonFromServer);
