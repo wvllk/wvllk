@@ -96,10 +96,10 @@ function runThisWithResultsFromServer(jsonFromServer) {
 
   // Make a configuration object for your chart
   // Instantiate your chart
-  //const reorganizedData = convertRestaurantsToCategories(jsonFromServer);
-  //const options = makeYourOptionsObject(reorganizedData);
-  //const chart = new CanvasJS.Chart('chartContainer', options);
-  //chart.render();
+  const reorganizedData = convertRestaurantsToCategories(jsonFromServer);
+  const options = makeYourOptionsObject(reorganizedData);
+  const chart = new CanvasJS.Chart('chartContainer', options);
+  chart.render();
 
 
 // Leave lines 52-67 alone; do your work in the functions above
