@@ -83,16 +83,16 @@ function runThisWithResultsFromServer(jsonFromServer) {
   const chart = new CanvasJS.Chart ('chartContainer')
   chart.render();
   $(window).on('resize, () => {
-    chart.render();
-  });
-}
+    chart.render()
+  )};
+
   // Make a configuration object for your chart
   // Instantiate your chart
-  const reorganizedData = convertRestaurantsToCategories(jsonFromServer);
-  const options = makeYourOptionsObject(reorganizedData);
-  const chart = new CanvasJS.Chart('chartContainer', options);
-  chart.render();
-}
+  //const reorganizedData = convertRestaurantsToCategories(jsonFromServer);
+  //const options = makeYourOptionsObject(reorganizedData);
+  //const chart = new CanvasJS.Chart('chartContainer', options);
+  //chart.render();
+
 
 // Leave lines 52-67 alone; do your work in the functions above
 document.body.addEventListener('submit', async (e) => {
