@@ -1,9 +1,3 @@
-
-Lealena Befikadu
-2:51 PM (0 minutes ago)
-
-to me
-
 // These are our required libraries to make the server work.
 /* eslint-disable no-console */
 /* eslint-disable no-unused-vars */
