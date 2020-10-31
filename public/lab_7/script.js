@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 function convertRestaurantsToCategories(restaurantList) {
   const catearr = [];
   const output = {};
