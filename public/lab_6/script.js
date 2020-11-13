@@ -22,9 +22,9 @@ document.body.addEventListener('submit', async (e) => {
   fetch('/api', {
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json',
+      'Content-Type': 'application/json'
     },
-    body: JSON.stringify(form),
+    body: JSON.stringify(form)
   })
     .then((fromServer) => fromServer.json())
     .then((fromServer) => {
