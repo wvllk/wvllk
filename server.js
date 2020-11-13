@@ -17,7 +17,10 @@ app.use(express.static('public'));
 
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  res.header(
+    'Access-Control-Allow-Headers',
+    'Origin, X-Requested-With, Content-Type, Accept'
+  );
   next();
 });
 
@@ -26,17 +29,18 @@ app.use((req, res, next) => {
 //     console.log('GET request detected');
 //     res.send(`Lab 5 for ${process.env.NAME}`);
 //   })
-app.route('/api')
-  .get(async(req, res) => {
+app
+  .route('/api')
+  .get(async (req, res) => {
     console.log('GET request detected');
     console.log('fetch request data', data);
   })
 
   //.post(async(req, res) => {
   //  console.log('POST request detected');
-   // const data = await fetch('https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json');
-   // const json = await data.json();
-   // res.json(json);
+  // const data = await fetch('https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json');
+  // const json = await data.json();
+  // res.json(json);
   //});
 
   // .post((req, res) => {
@@ -45,11 +49,11 @@ app.route('/api')
   //   console.log('Form data in res.body', req.body);
   // });
 
-   .post((req, res) => {
-   res.json(countries);
-     console.log('POST request detected');
-     console.log('Form data in res.body', req.body);
-   });
+  .post((req, res) => {
+    res.json(countries);
+    console.log('POST request detected');
+    console.log('Form data in res.body', req.body);
+  });
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}!`);
 });
