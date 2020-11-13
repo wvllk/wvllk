@@ -1,7 +1,7 @@
 // You may wish to find an effective randomizer function on MDN.
 
-const { reverse } = require("cypress/types/lodash");
-const { server } = require("cypress/types/sinon");
+//const { reverse } = require("cypress/types/lodash");
+//const { server } = require("cypress/types/sinon");
 
 function range(int) {
   const arr = [];
