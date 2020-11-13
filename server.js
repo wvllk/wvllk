@@ -45,6 +45,11 @@ app.route('/api')
   //   console.log('Form data in res.body', req.body);
   // });
 
+   .post((req, res) => {
+   res.json(countries);
+     console.log('POST request detected');
+     console.log('Form data in res.body', req.body);
+   });
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}!`);
 });
