@@ -34,7 +34,7 @@ document.body.addEventListener('submit', async (e) => {
 
       const arr1 = range(10);
       const arr2 = arr1.map(() => {
-        const number = getRandomInt(0, 243);
+        const number = getRandomInt(243);
         return fromServer[number];
       });
       const revlist = arr2.sort((a, b) => sortFunction(b, a, 'name'));
