@@ -40,7 +40,7 @@ document.body.addEventListener('submit', async (e) => {
       const revlist = arr2.sort((a, b) => sortFunction(b, a, 'name'));
       const olist = document.createElement('ol');
       olist.className = 'flex-inner';
-      $('form').append(olist);
+      $('form').prepend(olist);
 
       revlist.forEach((el, i) => {
         const lis = document.createElement('li');
